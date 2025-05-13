@@ -1,0 +1,23 @@
+{
+  "name": "netlify-playwright-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "netlify:e2e": "npx playwright test"
+  },
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17",
+    "@types/xml2js": "^0.4.14",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "xml2js": "^0.6.2"
+  }
+}

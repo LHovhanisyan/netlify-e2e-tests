@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                           // Set ECMAScript target version
+    "module": "CommonJS",                      // Use CommonJS module system
+    "strict": true,                             // Enable all strict type-checking options
+    "esModuleInterop": true,                    // Allow default imports from non-ESM modules
+    "skipLibCheck": true,                       // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,   // Ensure consistent casing in file names
+    "outDir": "./dist",                        // Output directory for compiled JavaScript files
+    "resolveJsonModule": true                   // Allow importing of .json files
+  },
+  "include": [
+    "tests/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
