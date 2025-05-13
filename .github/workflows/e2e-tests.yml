@@ -13,24 +13,24 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - name: 📥 Checkout code
+      - name:  Checkout code
         uses: actions/checkout@v4
 
-      - name: 🧱 Setup Node
+      - name:  Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: 📦 Install dependencies
+      - name:  Install dependencies
         run: npm ci
 
-      - name: 🎭 Install Playwright browsers
+      - name:  Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: 🧪 Run Playwright tests
+      - name:  Run Playwright tests
         run: npx playwright test
 
-      - name: 📊 Upload Playwright HTML report
+      - name:  Upload Playwright HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
